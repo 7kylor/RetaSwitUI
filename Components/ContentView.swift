@@ -9,7 +9,8 @@ struct ContentView: View {
     @State private var timerIsActive: Bool = false
     
     let sliderLabels = ["Slider 1", "Slider 2", "Slider 3"]
-  
+ 
+ 
     var body: some View {
         VStack {
             ForEach(sliderLabels.indices, id: \.self) { index in
@@ -24,10 +25,10 @@ struct ContentView: View {
                         if isEditing {
                             sliderValueChanged(sliderValue)
                         }
-                    }
-                    .onChange(of: sliderValue) { newValue in
+                    }.onChange(of: sliderValue) { newValue in
                         sliderValueChanged(newValue)
                     }
+                    
                     .onAppear(perform: prepareHaptics)
                }
                 .padding()
@@ -99,7 +100,10 @@ struct ContentView: View {
     }
   
     func startTimer() {
+//        self.timerIsActive = true
+        self.timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
         self.timerIsActive = true
+        
     }
     
     func pauseTimer() {
@@ -114,13 +118,14 @@ struct ContentView: View {
     func saveValues() {
         // Implement the logic to save the slider values and the timer value
         print("Slider Value: \(sliderValue), Time Elapsed: \(timeElapsed)")
+        // make a leabel blw to show thhe history of the saved values and the time
     }
-    
+    // show seconds
     func timeString(time: Int) -> String {
         let hours = time / 3600
         let minutes = (time % 3600) / 60
         let seconds = time % 60
-        return String(format:"%02i:%02i", hours, minutes, seconds)
+        return String(format: "%02i:%02i:%02i", hours, minutes, seconds)
     }
 }
 

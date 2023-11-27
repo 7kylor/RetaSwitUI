@@ -11,16 +11,14 @@
 		AA8198ED2A8B0AA000D2947C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8198EC2A8B0AA000D2947C /* ContentView.swift */; };
 		AA8198EF2A8B0AA100D2947C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8198EE2A8B0AA100D2947C /* Assets.xcassets */; };
 		AA8198F22A8B0AA100D2947C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8198F12A8B0AA100D2947C /* Preview Assets.xcassets */; };
-		AAD0AC682A96850400C38305 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0AC672A96850400C38305 /* Camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA8198E72A8B0AA000D2947C /* Components.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Components.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8198EA2A8B0AA000D2947C /* ComponentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsApp.swift; sourceTree = "<group>"; };
-		AA8198EC2A8B0AA000D2947C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA8198EC2A8B0AA000D2947C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 5; usesTabs = 0; };
 		AA8198EE2A8B0AA100D2947C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA8198F12A8B0AA100D2947C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AAD0AC672A96850400C38305 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +53,6 @@
 			children = (
 				AA8198EA2A8B0AA000D2947C /* ComponentsApp.swift */,
 				AA8198EC2A8B0AA000D2947C /* ContentView.swift */,
-				AAD0AC672A96850400C38305 /* Camera.swift */,
 				AA8198EE2A8B0AA100D2947C /* Assets.xcassets */,
 				AA8198F02A8B0AA100D2947C /* Preview Content */,
 			);
@@ -98,7 +95,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					AA8198E62A8B0AA000D2947C = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -142,7 +139,6 @@
 			files = (
 				AA8198ED2A8B0AA000D2947C /* ContentView.swift in Sources */,
 				AA8198EB2A8B0AA000D2947C /* ComponentsApp.swift in Sources */,
-				AAD0AC682A96850400C38305 /* Camera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +181,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -245,6 +242,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
